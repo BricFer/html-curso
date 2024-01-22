@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+
+</head>
+<body>
+    <main>
+        <h1>Pedido de pizza</h1>
+        <form action="#">
+            <fieldset>
+                <legend>La pizza</legend>
+                <p>Ingredientes</p>
+
+                <div>
+                    <input type="checkbox" name="cheese" id="cheese" value="cheese">
+                    <label for="cheese">Queso</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="peperoni" id="peperoni" value="peperoni">
+                    <label for="peperoni">Peperoni</label>
+                </div>               
+
+                <div>
+                    <input type="checkbox" name="maiz" id="maiz" value="maiz">
+                    <label for="maiz">Maiz</label>
+                </div>
+
+                <p>Tamaño</p>
+
+                <div>
+                    <input type="radio" name="size" id="small" value="small" required>
+                    <label for="small">Pequeña</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="size" id="medium" value="medium" required>
+                    <label for="medium">Mediana</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="size" id="large" value="large" required>
+                    <label for="large">Grande</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Entrega</legend>
+
+                <div>
+                    <label for="name">Nombre<sup>*</sup></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div>
+                    <label for="address">Dirección<sup>*</sup></label>
+                    <input type="text" size="18" name="address" id="address" required>
+                </div>
+
+                <div>
+                    <label for="phone">Teléfono </label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+
+                <div>
+                    <label for="instructions">Instrucciones especiales</label><br>
+                    <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Métodos de Pago</legend>
+                <select name="payments" id="payments">
+                    <option value="cash">Efectivo</option>
+                    <option value="credit">Tarjeta</option>
+                    <option value="bizum">Bizum</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Ok">            
+        </form>
+    </main>
+</body>
+</html>
